@@ -1,1 +1,1201 @@
-PLACEHOLDER
+[
+  {
+    "id": "PA01",
+    "deck": "pain",
+    "title": "ต้องรอ แต่ไม่รู้สถานะ",
+    "situation": "ผู้ใช้กำลังรอบางสิ่งที่สำคัญ แต่ไม่มีข้อมูลเพียงพอให้รู้ว่าตอนนี้อยู่ขั้นตอนไหนหรือจะต้องรออีกนานแค่ไหน",
+    "impact": "เสียเวลา วางแผนสิ่งอื่นไม่ได้ และเกิดความกังวล",
+    "difficulty": "Easy",
+    "minimumAction": "Lv.1"
+  },
+  {
+    "id": "PA02",
+    "deck": "pain",
+    "title": "ข้อมูลสำคัญอยู่หลายที่",
+    "situation": "ข้อมูลที่ต้องใช้กระจายอยู่หลายช่องทางหรือหลายคน ผู้ใช้ต้องจำเองว่าจะไปหาอะไรจากที่ไหน",
+    "impact": "เสียเวลาค้นหา ใช้ข้อมูลผิดเวอร์ชัน และต้องถามซ้ำ",
+    "difficulty": "Easy",
+    "minimumAction": "Lv.1"
+  },
+  {
+    "id": "PA03",
+    "deck": "pain",
+    "title": "ทำเรื่องง่ายแต่ต้องผ่านหลายขั้นตอน",
+    "situation": "ผู้ใช้ต้องทำหลายขั้นตอน กรอกข้อมูลซ้ำ หรือสลับหลายช่องทางเพื่อทำงานที่มีเป้าหมายเพียงอย่างเดียว",
+    "impact": "ใช้เวลานาน สับสน และมีโอกาสหยุดกลางทาง",
+    "difficulty": "Easy",
+    "minimumAction": "Lv.1"
+  },
+  {
+    "id": "PA04",
+    "deck": "pain",
+    "title": "ทำเสร็จแล้วแต่ไม่แน่ใจว่าสำเร็จจริง",
+    "situation": "หลังทำสิ่งสำคัญ ผู้ใช้ไม่ได้รับสัญญาณยืนยันที่เข้าใจง่ายว่ากระบวนการเสร็จสมบูรณ์แล้ว",
+    "impact": "ทำซ้ำ ติดต่อถาม หรือกังวลว่าจะเกิดปัญหาภายหลัง",
+    "difficulty": "Easy",
+    "minimumAction": "Lv.1"
+  },
+  {
+    "id": "PA05",
+    "deck": "pain",
+    "title": "ต้องขอความช่วยเหลือ แต่ไม่รู้จะถามใคร",
+    "situation": "เมื่อเจอปัญหา ผู้ใช้ไม่รู้ว่าใครเป็นเจ้าของเรื่อง ช่องทางไหนเหมาะ หรือควรเริ่มอธิบายจากตรงไหน",
+    "impact": "ถูกส่งต่อหลายครั้ง เล่าเรื่องเดิมซ้ำ และแก้ปัญหาช้า",
+    "difficulty": "Easy",
+    "minimumAction": "Lv.1"
+  },
+  {
+    "id": "PA06",
+    "deck": "pain",
+    "title": "ลืมสิ่งสำคัญที่เกิดซ้ำ",
+    "situation": "ผู้ใช้มีสิ่งสำคัญที่ต้องทำเป็นรอบ ๆ แต่กิจวัตรจริงมีสิ่งรบกวนและช่วงเวลาที่ไม่แน่นอน",
+    "impact": "พลาด Deadline ขาดความต่อเนื่อง หรือเกิดค่าใช้จ่ายที่ไม่จำเป็น",
+    "difficulty": "Easy",
+    "minimumAction": "Lv.1"
+  },
+  {
+    "id": "PA07",
+    "deck": "pain",
+    "title": "ข้อมูลที่ได้ไม่ตรงกัน",
+    "situation": "ผู้ใช้ได้รับข้อมูลเรื่องเดียวกันจากหลายแหล่ง แต่รายละเอียดหรือเวลาที่อัปเดตไม่ตรงกัน",
+    "impact": "ไม่รู้ว่าอะไรเชื่อได้ ตัดสินใจช้า และอาจเลือกผิด",
+    "difficulty": "Medium",
+    "minimumAction": "Lv.2"
+  },
+  {
+    "id": "PA08",
+    "deck": "pain",
+    "title": "ส่งต่องานแล้วบริบทหาย",
+    "situation": "เมื่อเรื่องถูกส่งจากคนหนึ่งไปอีกคน ข้อมูลเหตุผล ประวัติ หรือสิ่งที่เคยลองทำหายไประหว่างทาง",
+    "impact": "ต้องเริ่มอธิบายใหม่ งานซ้ำ และเกิดความผิดพลาด",
+    "difficulty": "Medium",
+    "minimumAction": "Lv.2"
+  },
+  {
+    "id": "PA09",
+    "deck": "pain",
+    "title": "ต้องทำข้อมูลหรือขั้นตอนเดิมซ้ำ ๆ",
+    "situation": "ผู้ใช้ต้องกรอก บอก หรือทำสิ่งเดิมซ้ำในหลายจุด ทั้งที่ข้อมูลนั้นเคยมีอยู่แล้ว",
+    "impact": "เสียเวลา เกิดข้อผิดพลาด และรู้สึกว่าระบบไม่เข้าใจผู้ใช้",
+    "difficulty": "Medium",
+    "minimumAction": "Lv.2"
+  },
+  {
+    "id": "PA10",
+    "deck": "pain",
+    "title": "มีตัวเลือกเยอะ แต่ไม่รู้ว่าอะไรเหมาะกับตัวเอง",
+    "situation": "ผู้ใช้เห็นข้อมูลหรือทางเลือกจำนวนมาก แต่ไม่มีเกณฑ์ที่ช่วยตัดสิ่งที่ไม่เกี่ยวข้องออก",
+    "impact": "ใช้เวลาตัดสินใจนาน เลือกเพราะเดา หรือเลิกทำไปเลย",
+    "difficulty": "Medium",
+    "minimumAction": "Lv.2"
+  },
+  {
+    "id": "PA11",
+    "deck": "pain",
+    "title": "ได้รับ Feedback เมื่อสายเกินไป",
+    "situation": "ผู้ใช้หรือทีมทำงานต่อไปหลายขั้นก่อนจะรู้ว่าสิ่งที่ทำไม่ตรงความต้องการหรือมีปัญหา",
+    "impact": "ต้อง Rework สูญเสียเวลาและทรัพยากรมากกว่าที่ควร",
+    "difficulty": "Medium",
+    "minimumAction": "Lv.2"
+  },
+  {
+    "id": "PA12",
+    "deck": "pain",
+    "title": "ต้องตัดสินใจเร็ว แต่ไม่รู้ว่าอะไรสำคัญที่สุด",
+    "situation": "ในสถานการณ์ที่เวลาจำกัด ผู้ใช้มีข้อมูลหลายอย่างแต่ไม่เห็นลำดับความสำคัญหรือผลกระทบของแต่ละทางเลือก",
+    "impact": "ลังเล ตัดสินใจจากความรู้สึก หรือพลาดเรื่องสำคัญ",
+    "difficulty": "Medium",
+    "minimumAction": "Lv.2"
+  },
+  {
+    "id": "PA13",
+    "deck": "pain",
+    "title": "ขั้นตอนเดียวกันไม่ได้ง่ายสำหรับทุกคน",
+    "situation": "กระบวนการที่คนส่วนใหญ่ทำได้กลับเป็นอุปสรรคสำหรับบางคนจากภาษา อายุ ความสามารถ อุปกรณ์ หรือประสบการณ์ดิจิทัล",
+    "impact": "บางกลุ่มต้องพึ่งคนอื่นหรือไม่สามารถใช้บริการได้เลย",
+    "difficulty": "Medium",
+    "minimumAction": "Lv.2"
+  },
+  {
+    "id": "PA14",
+    "deck": "pain",
+    "title": "ไม่มั่นใจว่าสิ่งที่เห็นหรือได้รับเชื่อถือได้แค่ไหน",
+    "situation": "ผู้ใช้ต้องตัดสินใจจากข้อมูล รีวิว คำแนะนำ หรือสถานะที่ตรวจสอบที่มาและความสดใหม่ได้ยาก",
+    "impact": "ไม่กล้าตัดสินใจ หรือเชื่อข้อมูลผิดและเกิดผลเสียตามมา",
+    "difficulty": "Medium",
+    "minimumAction": "Lv.2"
+  },
+  {
+    "id": "PA15",
+    "deck": "pain",
+    "title": "สิ่งสำคัญเปลี่ยนไป แต่คนที่เกี่ยวข้องรู้ช้า",
+    "situation": "เวลา เงื่อนไข สถานที่ หรือสถานะมีการเปลี่ยนแปลง แต่ข้อมูลไม่ถึงคนที่ต้องใช้ในเวลาที่เหมาะสม",
+    "impact": "เดินทางเสียเที่ยว พลาดนัด ทำงานผิดแผน หรือเกิดความไม่พอใจ",
+    "difficulty": "Hard",
+    "minimumAction": "Lv.3"
+  },
+  {
+    "id": "PA16",
+    "deck": "pain",
+    "title": "หลายคนต้องทำงานร่วมกัน แต่ไม่มีใครเห็นภาพเดียวกัน",
+    "situation": "คนหลายฝ่ายมีหน้าที่และข้อจำกัดต่างกัน แต่ไม่มีภาพรวมของสถานะ ความรับผิดชอบ และสิ่งที่ติดอยู่",
+    "impact": "รอกัน ทำงานซ้ำ และพบ Risk เมื่อใกล้ Deadline",
+    "difficulty": "Hard",
+    "minimumAction": "Lv.3"
+  },
+  {
+    "id": "PA17",
+    "deck": "pain",
+    "title": "เมื่อเกิดข้อผิดพลาด ผู้ใช้ไม่รู้ว่าจะกู้สถานการณ์อย่างไร",
+    "situation": "ระบบหรือกระบวนการแจ้งว่าเกิดปัญหา แต่ไม่ได้อธิบายว่าผิดตรงไหน ข้อมูลหายหรือไม่ และควรทำอะไรต่อ",
+    "impact": "ลองซ้ำแบบเดิม ติดต่อ Support หรือยกเลิกสิ่งที่กำลังทำ",
+    "difficulty": "Hard",
+    "minimumAction": "Lv.3"
+  },
+  {
+    "id": "PA18",
+    "deck": "pain",
+    "title": "อยากได้ความสะดวก แต่ไม่อยากเสียการควบคุมข้อมูลของตัวเอง",
+    "situation": "บริการขอข้อมูลหรือสิทธิ์เพื่อทำประสบการณ์ให้สะดวกขึ้น แต่ผู้ใช้ไม่เข้าใจว่าจำเป็นแค่ไหน ใช้ทำอะไร และปฏิเสธได้หรือไม่",
+    "impact": "ไม่ไว้ใจบริการ ยอมให้สิทธิ์โดยไม่เข้าใจ หรือเลิกใช้",
+    "difficulty": "Hard",
+    "minimumAction": "Lv.3"
+  },
+  {
+    "id": "PR01",
+    "deck": "persona",
+    "title": "สมศรี",
+    "identity": "ผู้สูงวัยที่อาศัยอยู่คนเดียว",
+    "goal": "อยากทำธุระประจำวันได้ด้วยตัวเอง",
+    "behavior": "ใช้ LINE และโทรศัพท์เป็นหลัก",
+    "constraint": "ตัวหนังสือเล็ก ขั้นตอนเยอะ ทำให้ไม่มั่นใจ",
+    "digitalConfidence": "Low",
+    "tags": [
+      "Elderly",
+      "Independent",
+      "Digital Beginner"
+    ]
+  },
+  {
+    "id": "PR02",
+    "deck": "persona",
+    "title": "นนท์",
+    "identity": "นักศึกษามหาวิทยาลัยที่ทำหลายกิจกรรม",
+    "goal": "อยากจัดการเรียนและกิจกรรมโดยไม่พลาดเรื่องสำคัญ",
+    "behavior": "ใช้มือถือเกือบทุกอย่างและสลับหลายแอป",
+    "constraint": "ข้อมูลกระจาย สมาธิหลุดง่าย เวลาน้อย",
+    "digitalConfidence": "High",
+    "tags": [
+      "Student",
+      "Busy",
+      "Digital Native"
+    ]
+  },
+  {
+    "id": "PR03",
+    "deck": "persona",
+    "title": "เมย์",
+    "identity": "พนักงานออฟฟิศที่เดินทางทุกวัน",
+    "goal": "อยากใช้เวลาเดินทางและทำงานให้คุ้มที่สุด",
+    "behavior": "เช็กข้อมูลระหว่างเดินทางและตัดสินใจเร็ว",
+    "constraint": "เวลาเร่งด่วน มือหนึ่งถือของ อินเทอร์เน็ตไม่คงที่",
+    "digitalConfidence": "High",
+    "tags": [
+      "Commuter",
+      "Time-poor",
+      "Mobile-first"
+    ]
+  },
+  {
+    "id": "PR04",
+    "deck": "persona",
+    "title": "เอก",
+    "identity": "เจ้าของร้านอาหารขนาดเล็ก",
+    "goal": "อยากดูร้านและออเดอร์หลายช่องทางได้ทัน",
+    "behavior": "พึ่ง LINE โทรศัพท์ และหลายแพลตฟอร์มเดลิเวอรี",
+    "constraint": "ไม่มีทีม IT และต้องทำหลายหน้าที่พร้อมกัน",
+    "digitalConfidence": "Medium",
+    "tags": [
+      "SME",
+      "Multi-tasker",
+      "Owner"
+    ]
+  },
+  {
+    "id": "PR05",
+    "deck": "persona",
+    "title": "ฟ้า",
+    "identity": "คุณแม่ที่ดูแลลูกเล็กและทำงานจากบ้าน",
+    "goal": "อยากจัดการเรื่องครอบครัวโดยไม่กระทบงาน",
+    "behavior": "ใช้มือถือเป็นช่วงสั้น ๆ ระหว่างดูแลลูก",
+    "constraint": "ถูกขัดจังหวะบ่อยและต้องจำหลายเรื่องพร้อมกัน",
+    "digitalConfidence": "High",
+    "tags": [
+      "Parent",
+      "Interrupted",
+      "Mobile"
+    ]
+  },
+  {
+    "id": "PR06",
+    "deck": "persona",
+    "title": "ต้น",
+    "identity": "พนักงานใหม่ในองค์กรใหญ่",
+    "goal": "อยากเรียนรู้งานและทำสิ่งต่าง ๆ ได้โดยไม่ต้องถามซ้ำ",
+    "behavior": "ค้นเอกสารและถามคนในทีมบ่อย",
+    "constraint": "ไม่รู้ว่าใครเป็นเจ้าของเรื่องและคำศัพท์องค์กรเยอะ",
+    "digitalConfidence": "High",
+    "tags": [
+      "New Employee",
+      "Learner",
+      "Uncertain"
+    ]
+  },
+  {
+    "id": "PR07",
+    "deck": "persona",
+    "title": "พิม",
+    "identity": "หัวหน้าทีมที่ดูหลายโปรเจกต์",
+    "goal": "อยากเห็นความคืบหน้าและ Risk โดยไม่ต้องตามทุกคน",
+    "behavior": "ใช้ dashboard, chat และ meeting หลายชุด",
+    "constraint": "ข้อมูลอัปเดตไม่พร้อมกันและเวลา meeting จำกัด",
+    "digitalConfidence": "High",
+    "tags": [
+      "Manager",
+      "Multi-project",
+      "Decision Maker"
+    ]
+  },
+  {
+    "id": "PR08",
+    "deck": "persona",
+    "title": "ก้อง",
+    "identity": "ช่างเทคนิคภาคสนาม",
+    "goal": "อยากปิดงานหน้างานได้ในครั้งเดียว",
+    "behavior": "ใช้มือถือกลางแจ้งและบางพื้นที่เน็ตไม่ดี",
+    "constraint": "มือไม่ว่าง หน้าจอเล็ก และอาจใส่ถุงมือ",
+    "digitalConfidence": "Medium",
+    "tags": [
+      "Field Worker",
+      "Offline",
+      "Task-focused"
+    ]
+  },
+  {
+    "id": "PR09",
+    "deck": "persona",
+    "title": "มิ้นท์",
+    "identity": "Freelancer ที่รับงานหลายลูกค้า",
+    "goal": "อยากส่งงานตรงเวลาและลดงานตามแก้",
+    "behavior": "สลับ email, chat, drive และ project tools",
+    "constraint": "Requirement แต่ละลูกค้าต่างกันและ feedback มาช้า",
+    "digitalConfidence": "High",
+    "tags": [
+      "Freelancer",
+      "Multi-client",
+      "Remote"
+    ]
+  },
+  {
+    "id": "PR10",
+    "deck": "persona",
+    "title": "ชัย",
+    "identity": "พนักงานคลังสินค้า",
+    "goal": "อยากทำงานถูกต้องโดยไม่เสียเวลาหาข้อมูล",
+    "behavior": "ใช้เครื่องสแกนและหน้าจอระบบภายใน",
+    "constraint": "ระบบช้า ตัวหนังสือเล็ก และต้องทำงานเร็ว",
+    "digitalConfidence": "Low",
+    "tags": [
+      "Warehouse",
+      "Operational",
+      "Repetitive"
+    ]
+  },
+  {
+    "id": "PR11",
+    "deck": "persona",
+    "title": "แอน",
+    "identity": "เจ้าหน้าที่ Customer Support",
+    "goal": "อยากแก้ปัญหาลูกค้าได้ในครั้งแรก",
+    "behavior": "รับเคสจากหลายช่องทางและส่งต่อหลายทีม",
+    "constraint": "บริบทหายและต้องถามข้อมูลลูกค้าซ้ำ",
+    "digitalConfidence": "High",
+    "tags": [
+      "Support",
+      "Handoff",
+      "Service"
+    ]
+  },
+  {
+    "id": "PR12",
+    "deck": "persona",
+    "title": "บีม",
+    "identity": "เจ้าหน้าที่โรงพยาบาลหน้าเคาน์เตอร์",
+    "goal": "อยากให้ผู้รับบริการเข้าใจขั้นตอนโดยไม่ต้องถามซ้ำ",
+    "behavior": "สื่อสารกับคนหลากหลายวัยและสถานการณ์",
+    "constraint": "งานเร่ง คนเยอะ และข้อมูลบางอย่างอ่อนไหว",
+    "digitalConfidence": "High",
+    "tags": [
+      "Healthcare Staff",
+      "Service",
+      "High-pressure"
+    ]
+  },
+  {
+    "id": "PR13",
+    "deck": "persona",
+    "title": "วิทย์",
+    "identity": "ผู้ดูแลระบบ IT ของบริษัทเล็ก",
+    "goal": "อยากให้ระบบใช้งานได้ต่อเนื่องโดยไม่ต้องดับไฟตลอดเวลา",
+    "behavior": "ดูหลายระบบพร้อมกันและรับ alert ตลอดวัน",
+    "constraint": "คนจำกัด งบจำกัด และ legacy system เยอะ",
+    "digitalConfidence": "High",
+    "tags": [
+      "IT Admin",
+      "Resource-constrained",
+      "Alert-heavy"
+    ]
+  },
+  {
+    "id": "PR14",
+    "deck": "persona",
+    "title": "นุ่น",
+    "identity": "เจ้าหน้าที่การตลาดที่ต้องทำแคมเปญเร็ว",
+    "goal": "อยากเข้าใจผลแคมเปญและปรับได้ทันเวลา",
+    "behavior": "ใช้ social, ads, analytics หลายแพลตฟอร์ม",
+    "constraint": "ข้อมูลคนละช่วงเวลาและ metric ไม่ตรงกัน",
+    "digitalConfidence": "High",
+    "tags": [
+      "Marketing",
+      "Data-heavy",
+      "Fast-moving"
+    ]
+  },
+  {
+    "id": "PR15",
+    "deck": "persona",
+    "title": "มนตรี",
+    "identity": "เจ้าของกิจการรุ่นเก่าที่ไม่ชอบระบบซับซ้อน",
+    "goal": "อยากเห็นข้อมูลสำคัญเพื่อใช้ตัดสินใจ",
+    "behavior": "ให้พนักงานช่วยใช้ระบบและชอบโทรคุย",
+    "constraint": "ไม่ชอบเรียนรู้เมนูใหม่และไม่ไว้ใจระบบอัตโนมัติทั้งหมด",
+    "digitalConfidence": "Low",
+    "tags": [
+      "Owner",
+      "Traditional",
+      "Delegator"
+    ]
+  },
+  {
+    "id": "PR16",
+    "deck": "persona",
+    "title": "จูน",
+    "identity": "ผู้ใช้ที่มีสายตาเลือนราง",
+    "goal": "อยากทำธุรกรรมได้ด้วยตัวเองอย่างมั่นใจ",
+    "behavior": "ใช้ screen magnification และ voice assist บางครั้ง",
+    "constraint": "contrast ต่ำ ตัวหนังสือเล็ก และ layout ซับซ้อน",
+    "digitalConfidence": "Medium",
+    "tags": [
+      "Accessibility",
+      "Low Vision",
+      "Independent"
+    ]
+  },
+  {
+    "id": "PR17",
+    "deck": "persona",
+    "title": "อาลี",
+    "identity": "นักศึกษาต่างชาติที่อ่านภาษาไทยได้จำกัด",
+    "goal": "อยากทำขั้นตอนมหาวิทยาลัยได้โดยไม่พึ่งเพื่อนทุกครั้ง",
+    "behavior": "ใช้ English interface และ translation tools",
+    "constraint": "ศัพท์เฉพาะภาษาไทยและเอกสารราชการเข้าใจยาก",
+    "digitalConfidence": "High",
+    "tags": [
+      "International",
+      "Language Barrier",
+      "Student"
+    ]
+  },
+  {
+    "id": "PR18",
+    "deck": "persona",
+    "title": "ป้าแดง",
+    "identity": "แม่ค้าตลาดสดที่ใช้มือถือพื้นฐาน",
+    "goal": "อยากรับเงินและติดตามยอดง่าย ๆ",
+    "behavior": "ใช้ LINE, โทรศัพท์ และ QR payment",
+    "constraint": "ยุ่งกับลูกค้า มือเปียก/ไม่สะอาด และไม่ชอบพิมพ์เยอะ",
+    "digitalConfidence": "Low",
+    "tags": [
+      "Merchant",
+      "Busy Hands",
+      "Basic Digital"
+    ]
+  },
+  {
+    "id": "PR19",
+    "deck": "persona",
+    "title": "โอ๊ต",
+    "identity": "นักพัฒนา Software ที่ทำงาน Remote",
+    "goal": "อยากโฟกัสงานและลด interruption",
+    "behavior": "ใช้ IDE, chat, issue tracker และ meeting tools",
+    "constraint": "context switching สูงและ notification เยอะ",
+    "digitalConfidence": "High",
+    "tags": [
+      "Developer",
+      "Remote",
+      "Focused Work"
+    ]
+  },
+  {
+    "id": "PR20",
+    "deck": "persona",
+    "title": "นิด",
+    "identity": "HR ที่ดูแลพนักงานหลายสาขา",
+    "goal": "อยากให้ข้อมูลพนักงานถูกต้องและกระบวนการสม่ำเสมอ",
+    "behavior": "ใช้ spreadsheet, HR system และ email",
+    "constraint": "ข้อมูลจากแต่ละสาขาไม่ตรงกันและมีข้อมูลส่วนบุคคล",
+    "digitalConfidence": "Medium",
+    "tags": [
+      "HR",
+      "Multi-site",
+      "Privacy-sensitive"
+    ]
+  },
+  {
+    "id": "PR21",
+    "deck": "persona",
+    "title": "บอล",
+    "identity": "พนักงานขายภาคสนาม",
+    "goal": "อยากตอบลูกค้าและปิดการขายได้ทันที",
+    "behavior": "ใช้มือถือเป็นหลักและเดินทางตลอดวัน",
+    "constraint": "ข้อมูลราคา/สต๊อกเปลี่ยนเร็วและเน็ตไม่เสถียร",
+    "digitalConfidence": "High",
+    "tags": [
+      "Sales",
+      "Mobile",
+      "Fast Decision"
+    ]
+  },
+  {
+    "id": "PR22",
+    "deck": "persona",
+    "title": "ออม",
+    "identity": "นักบัญชีที่ต้องตรวจข้อมูลจำนวนมาก",
+    "goal": "อยากลดข้อผิดพลาดและตรวจย้อนหลังได้ง่าย",
+    "behavior": "ทำงานกับ spreadsheet และระบบบัญชีหลายชุด",
+    "constraint": "งานซ้ำ รายละเอียดเยอะ และผิดพลาดเล็กน้อยมีผลสูง",
+    "digitalConfidence": "High",
+    "tags": [
+      "Finance",
+      "Detail-oriented",
+      "Audit"
+    ]
+  },
+  {
+    "id": "PR23",
+    "deck": "persona",
+    "title": "ครูแป้ง",
+    "identity": "ครูมัธยมที่ดูแลหลายห้องเรียน",
+    "goal": "อยากติดตามนักเรียนและงานโดยไม่เพิ่มภาระเอกสาร",
+    "behavior": "ใช้ LINE, LMS และเอกสารโรงเรียน",
+    "constraint": "ข้อมูลกระจายและต้องสื่อสารกับหลายกลุ่ม",
+    "digitalConfidence": "Medium",
+    "tags": [
+      "Teacher",
+      "Multi-group",
+      "Administrative"
+    ]
+  },
+  {
+    "id": "PR24",
+    "deck": "persona",
+    "title": "วิน",
+    "identity": "ผู้ใช้ที่ใส่ใจ Privacy และ Security",
+    "goal": "อยากใช้บริการดิจิทัลโดยควบคุมข้อมูลตัวเองได้",
+    "behavior": "อ่าน permission และ privacy notice ก่อนยอมรับ",
+    "constraint": "ไม่ไว้ใจคำขอข้อมูลที่ไม่อธิบายเหตุผล",
+    "digitalConfidence": "High",
+    "tags": [
+      "Privacy-conscious",
+      "Digital Native",
+      "Skeptical"
+    ]
+  },
+  {
+    "id": "RL01",
+    "deck": "role",
+    "title": "Product Manager",
+    "capabilities": [
+      "Product Goal",
+      "Priority",
+      "Scope"
+    ],
+    "responsibilities": "กำหนดทิศทาง จัดลำดับ และเชื่อมทีม",
+    "manday": 5,
+    "budget": 0
+  },
+  {
+    "id": "RL02",
+    "deck": "role",
+    "title": "Business Analyst",
+    "capabilities": [
+      "Requirement",
+      "Process",
+      "Stakeholder"
+    ],
+    "responsibilities": "วิเคราะห์ requirement และกระบวนการ",
+    "manday": 4,
+    "budget": 0
+  },
+  {
+    "id": "RL03",
+    "deck": "role",
+    "title": "UX Researcher",
+    "capabilities": [
+      "Research",
+      "Interview",
+      "Insight"
+    ],
+    "responsibilities": "ทำความเข้าใจผู้ใช้และหา Pain จริง",
+    "manday": 4,
+    "budget": 0
+  },
+  {
+    "id": "RL04",
+    "deck": "role",
+    "title": "UX/UI Designer",
+    "capabilities": [
+      "Journey",
+      "UI",
+      "Prototype"
+    ],
+    "responsibilities": "ออกแบบประสบการณ์และหน้าตา Product",
+    "manday": 4,
+    "budget": 0
+  },
+  {
+    "id": "RL05",
+    "deck": "role",
+    "title": "Mobile Developer",
+    "capabilities": [
+      "Mobile App",
+      "Integration"
+    ],
+    "responsibilities": "พัฒนา Application ฝั่งผู้ใช้",
+    "manday": 6,
+    "budget": 0
+  },
+  {
+    "id": "RL06",
+    "deck": "role",
+    "title": "Backend Developer",
+    "capabilities": [
+      "API",
+      "Logic",
+      "Database"
+    ],
+    "responsibilities": "พัฒนา logic, API และ integration",
+    "manday": 6,
+    "budget": 0
+  },
+  {
+    "id": "RL07",
+    "deck": "role",
+    "title": "QA / Test Engineer",
+    "capabilities": [
+      "Test",
+      "Edge Cases",
+      "Quality"
+    ],
+    "responsibilities": "วางแผนและตรวจคุณภาพก่อนปล่อย",
+    "manday": 4,
+    "budget": 0
+  },
+  {
+    "id": "RL08",
+    "deck": "role",
+    "title": "DevOps / Cloud",
+    "capabilities": [
+      "Infra",
+      "CI/CD",
+      "Monitoring"
+    ],
+    "responsibilities": "ดูแล infrastructure และ deployment",
+    "manday": 5,
+    "budget": 0
+  },
+  {
+    "id": "RL09",
+    "deck": "role",
+    "title": "Data Analyst",
+    "capabilities": [
+      "Analytics",
+      "Metrics",
+      "Insight"
+    ],
+    "responsibilities": "วิเคราะห์ข้อมูลและสร้าง metric เพื่อการตัดสินใจ",
+    "manday": 4,
+    "budget": 0
+  },
+  {
+    "id": "RL10",
+    "deck": "role",
+    "title": "Security Engineer",
+    "capabilities": [
+      "Security",
+      "Privacy",
+      "Risk"
+    ],
+    "responsibilities": "ดูแลความปลอดภัยและลดความเสี่ยง",
+    "manday": 5,
+    "budget": 5000
+  },
+  {
+    "id": "RL11",
+    "deck": "role",
+    "title": "Legal / Compliance",
+    "capabilities": [
+      "Regulation",
+      "Consent",
+      "Compliance"
+    ],
+    "responsibilities": "ตรวจข้อกฎหมายและข้อกำกับ",
+    "manday": 4,
+    "budget": 0
+  },
+  {
+    "id": "RL12",
+    "deck": "role",
+    "title": "Marketing / Growth",
+    "capabilities": [
+      "Adoption",
+      "Communication",
+      "Growth"
+    ],
+    "responsibilities": "ทำตลาด สื่อสาร และผลักดันการใช้งาน",
+    "manday": 4,
+    "budget": 2000
+  },
+  {
+    "id": "RL13",
+    "deck": "role",
+    "title": "Business / Finance",
+    "capabilities": [
+      "ROI",
+      "Revenue",
+      "Cost"
+    ],
+    "responsibilities": "วิเคราะห์ความคุ้มค่าและโมเดลธุรกิจ",
+    "manday": 4,
+    "budget": 0
+  },
+  {
+    "id": "RL14",
+    "deck": "role",
+    "title": "Operations / Support",
+    "capabilities": [
+      "Service",
+      "Handoff",
+      "Support"
+    ],
+    "responsibilities": "ดูแลการให้บริการหลังการใช้งานจริง",
+    "manday": 4,
+    "budget": 0
+  },
+  {
+    "id": "AC01",
+    "deck": "action",
+    "title": "User Interview",
+    "phase": "Discover",
+    "level": "Lv.1",
+    "description": "พูดคุยกับผู้ใช้เพื่อเข้าใจเหตุผล พฤติกรรม และสิ่งที่ทีมยังไม่รู้",
+    "manday": 2,
+    "budget": 0,
+    "roleRule": "ANY 1 ROLE",
+    "compatibleRoles": [
+      "UX Researcher",
+      "Product Manager",
+      "Business Analyst"
+    ]
+  },
+  {
+    "id": "AC02",
+    "deck": "action",
+    "title": "Observation",
+    "phase": "Discover",
+    "level": "Lv.1",
+    "description": "สังเกตสิ่งที่ผู้ใช้ทำจริง เพื่อหา friction ที่คำพูดอาจไม่บอก",
+    "manday": 2,
+    "budget": 0,
+    "roleRule": "ANY 1 ROLE",
+    "compatibleRoles": [
+      "UX Researcher",
+      "UX/UI Designer",
+      "Operations / Support"
+    ]
+  },
+  {
+    "id": "AC03",
+    "deck": "action",
+    "title": "Problem Framing",
+    "phase": "Define",
+    "level": "Lv.1",
+    "description": "สรุปว่าใครกำลังเจออะไร เพราะอะไร และ outcome ที่ต้องการคืออะไร",
+    "manday": 1,
+    "budget": 0,
+    "roleRule": "ANY 1 ROLE",
+    "compatibleRoles": [
+      "Product Manager",
+      "Business Analyst",
+      "UX Researcher"
+    ]
+  },
+  {
+    "id": "AC04",
+    "deck": "action",
+    "title": "Solution Sketch",
+    "phase": "Ideate",
+    "level": "Lv.1",
+    "description": "ร่างแนวทางแก้หลายแบบก่อนเลือกว่าจะลงทุนทำอะไรต่อ",
+    "manday": 2,
+    "budget": 0,
+    "roleRule": "ANY 1 ROLE",
+    "compatibleRoles": [
+      "UX/UI Designer",
+      "Product Manager",
+      "Marketing / Growth"
+    ]
+  },
+  {
+    "id": "AC05",
+    "deck": "action",
+    "title": "Journey Mapping",
+    "phase": "Define",
+    "level": "Lv.2",
+    "description": "มองขั้นตอนตั้งแต่ต้นจนจบเพื่อหาจุดติดขัดและโอกาส",
+    "manday": 3,
+    "budget": 1000,
+    "roleRule": "ANY 1 ROLE",
+    "compatibleRoles": [
+      "UX/UI Designer",
+      "UX Researcher",
+      "Business Analyst"
+    ]
+  },
+  {
+    "id": "AC06",
+    "deck": "action",
+    "title": "Process Redesign",
+    "phase": "Design",
+    "level": "Lv.2",
+    "description": "ออกแบบกระบวนการใหม่ทั้งฝั่งผู้ใช้และคนที่ทำงานเบื้องหลัง",
+    "manday": 3,
+    "budget": 1000,
+    "roleRule": "ANY 1 ROLE",
+    "compatibleRoles": [
+      "Business Analyst",
+      "Operations / Support",
+      "Product Manager"
+    ]
+  },
+  {
+    "id": "AC07",
+    "deck": "action",
+    "title": "Prototype",
+    "phase": "Design",
+    "level": "Lv.2",
+    "description": "สร้างต้นแบบเพื่อให้ผู้ใช้เห็นหรือทดลองแนวคิดก่อน Build จริง",
+    "manday": 4,
+    "budget": 2000,
+    "roleRule": "ANY 1 ROLE",
+    "compatibleRoles": [
+      "UX/UI Designer",
+      "Mobile Developer"
+    ]
+  },
+  {
+    "id": "AC08",
+    "deck": "action",
+    "title": "Feasibility Check",
+    "phase": "Validate",
+    "level": "Lv.2",
+    "description": "ตรวจข้อจำกัดด้าน Tech, Data, Operation หรือ Business ก่อนลงทุนเพิ่ม",
+    "manday": 3,
+    "budget": 1000,
+    "roleRule": "ANY 1 ROLE",
+    "compatibleRoles": [
+      "Mobile Developer",
+      "Backend Developer",
+      "DevOps / Cloud",
+      "Business / Finance"
+    ]
+  },
+  {
+    "id": "AC09",
+    "deck": "action",
+    "title": "User Test",
+    "phase": "Validate",
+    "level": "Lv.2",
+    "description": "ให้ผู้ใช้ตัวแทนทดลองต้นแบบและตรวจว่าสามารถแก้ Pain ได้จริง",
+    "manday": 4,
+    "budget": 2000,
+    "roleRule": "ANY 1 ROLE",
+    "compatibleRoles": [
+      "UX Researcher",
+      "UX/UI Designer",
+      "Product Manager"
+    ]
+  },
+  {
+    "id": "AC10",
+    "deck": "action",
+    "title": "Data Analysis",
+    "phase": "Discover",
+    "level": "Lv.2",
+    "description": "วิเคราะห์ข้อมูลเพื่อหา pattern และตรวจสมมติฐานของทีม",
+    "manday": 4,
+    "budget": 1000,
+    "roleRule": "ANY 1 ROLE",
+    "compatibleRoles": [
+      "Data Analyst",
+      "Product Manager",
+      "Business Analyst"
+    ]
+  },
+  {
+    "id": "AC11",
+    "deck": "action",
+    "title": "Security Review",
+    "phase": "Validate",
+    "level": "Lv.2",
+    "description": "ตรวจความเสี่ยงด้านข้อมูล สิทธิ์ การเข้าถึง และ misuse",
+    "manday": 3,
+    "budget": 1500,
+    "roleRule": "ANY 1 ROLE",
+    "compatibleRoles": [
+      "Security Engineer",
+      "Backend Developer",
+      "Legal / Compliance"
+    ]
+  },
+  {
+    "id": "AC12",
+    "deck": "action",
+    "title": "Compliance Check",
+    "phase": "Validate",
+    "level": "Lv.2",
+    "description": "ตรวจ privacy, consent และข้อกำกับที่เกี่ยวข้องก่อนเดินหน้าต่อ",
+    "manday": 3,
+    "budget": 1500,
+    "roleRule": "ANY 1 ROLE",
+    "compatibleRoles": [
+      "Legal / Compliance",
+      "Security Engineer",
+      "Product Manager"
+    ]
+  },
+  {
+    "id": "AC13",
+    "deck": "action",
+    "title": "Acceptance Test",
+    "phase": "Validate",
+    "level": "Lv.2",
+    "description": "ทดสอบ flow สำคัญและ edge case ก่อนใช้งานจริง",
+    "manday": 4,
+    "budget": 1000,
+    "roleRule": "ANY 1 ROLE",
+    "compatibleRoles": [
+      "QA / Test Engineer",
+      "Product Manager",
+      "UX/UI Designer"
+    ]
+  },
+  {
+    "id": "AC14",
+    "deck": "action",
+    "title": "Build MVP",
+    "phase": "Build",
+    "level": "Lv.3",
+    "description": "สร้างส่วนสำคัญที่สุดของ Solution ที่สามารถใช้งานหรือทดลองจริงได้",
+    "manday": 8,
+    "budget": 5000,
+    "roleRule": "REQUIRED 2 ROLES",
+    "compatibleRoles": [
+      "Mobile Developer",
+      "Backend Developer"
+    ]
+  },
+  {
+    "id": "AC15",
+    "deck": "action",
+    "title": "Integration",
+    "phase": "Build",
+    "level": "Lv.3",
+    "description": "เชื่อมระบบหรือข้อมูลภายนอกที่จำเป็นต่อ Product",
+    "manday": 6,
+    "budget": 4000,
+    "roleRule": "REQUIRED 2 ROLES",
+    "compatibleRoles": [
+      "Backend Developer",
+      "DevOps / Cloud"
+    ]
+  },
+  {
+    "id": "AC16",
+    "deck": "action",
+    "title": "Pilot Launch",
+    "phase": "Launch",
+    "level": "Lv.3",
+    "description": "เปิดทดลองกับกลุ่มเล็กเพื่อเรียนรู้ก่อนขยายเต็มรูปแบบ",
+    "manday": 6,
+    "budget": 3000,
+    "roleRule": "REQUIRED 2 ROLES",
+    "compatibleRoles": [
+      "Product Manager",
+      "Operations / Support"
+    ]
+  },
+  {
+    "id": "AC17",
+    "deck": "action",
+    "title": "Measure Outcome",
+    "phase": "Learn",
+    "level": "Lv.3",
+    "description": "กำหนด metric และวัดว่าผลลัพธ์ของ Pain ดีขึ้นจริงหรือไม่",
+    "manday": 5,
+    "budget": 2500,
+    "roleRule": "ANY 1 ROLE",
+    "compatibleRoles": [
+      "Data Analyst",
+      "Product Manager",
+      "Business / Finance"
+    ]
+  },
+  {
+    "id": "AC18",
+    "deck": "action",
+    "title": "Launch Communication",
+    "phase": "Launch",
+    "level": "Lv.3",
+    "description": "วางแผนข้อความ ช่องทาง และการสื่อสารให้กลุ่มเป้าหมายเริ่มใช้",
+    "manday": 5,
+    "budget": 3000,
+    "roleRule": "ANY 1 ROLE",
+    "compatibleRoles": [
+      "Marketing / Growth",
+      "Product Manager",
+      "Operations / Support"
+    ]
+  },
+  {
+    "id": "AC19",
+    "deck": "action",
+    "title": "Operational Readiness",
+    "phase": "Launch",
+    "level": "Lv.3",
+    "description": "เตรียม support, process, monitoring และการรับมือกรณีผิดปกติ",
+    "manday": 5,
+    "budget": 3000,
+    "roleRule": "REQUIRED 2 ROLES",
+    "compatibleRoles": [
+      "Operations / Support",
+      "DevOps / Cloud"
+    ]
+  },
+  {
+    "id": "AC20",
+    "deck": "action",
+    "title": "Business Case",
+    "phase": "Define",
+    "level": "Lv.2",
+    "description": "ประเมินต้นทุน คุณค่า และความเป็นไปได้ทางธุรกิจก่อนลงทุนต่อ",
+    "manday": 3,
+    "budget": 1000,
+    "roleRule": "ANY 1 ROLE",
+    "compatibleRoles": [
+      "Business / Finance",
+      "Product Manager",
+      "Marketing / Growth"
+    ]
+  },
+  {
+    "id": "EV01",
+    "deck": "reality",
+    "title": "Key Member Unavailable",
+    "situation": "สมาชิกสำคัญไม่สามารถทำงานตามแผนได้",
+    "penaltyManday": -4,
+    "penaltyBudget": 0,
+    "question": "ทีมจะลด Scope หรือจัดงานใหม่อย่างไร?"
+  },
+  {
+    "id": "EV02",
+    "deck": "reality",
+    "title": "Feedback Arrives Late",
+    "situation": "ผล Review มาหลังจากทีมเดินหน้าต่อหลายขั้นแล้ว",
+    "penaltyManday": -3,
+    "penaltyBudget": 0,
+    "question": "อะไรควร Rework และอะไรควรรักษาไว้?"
+  },
+  {
+    "id": "EV03",
+    "deck": "reality",
+    "title": "Budget Cut",
+    "situation": "ผู้สนับสนุนลดงบประมาณระหว่าง Sprint",
+    "penaltyManday": 0,
+    "penaltyBudget": -4000,
+    "question": "อะไรคือสิ่งแรกที่ทีมจะตัดออก?"
+  },
+  {
+    "id": "EV04",
+    "deck": "reality",
+    "title": "Unexpected Tool Cost",
+    "situation": "ต้องซื้อเครื่องมือหรือบริการเพิ่มจากที่วางแผนไว้",
+    "penaltyManday": 0,
+    "penaltyBudget": -3000,
+    "question": "ยังคุ้มที่จะทำแบบเดิมหรือไม่?"
+  },
+  {
+    "id": "EV05",
+    "deck": "reality",
+    "title": "Data Delayed",
+    "situation": "ข้อมูลที่จำเป็นมาช้ากว่ากำหนด",
+    "penaltyManday": -3,
+    "penaltyBudget": 0,
+    "question": "มี Action ไหนที่ทำคู่ขนานได้บ้าง?"
+  },
+  {
+    "id": "EV06",
+    "deck": "reality",
+    "title": "Requirement Changed",
+    "situation": "Stakeholder เปลี่ยนเงื่อนไขสำคัญกลางทาง",
+    "penaltyManday": -2,
+    "penaltyBudget": -1000,
+    "question": "อะไรใน Product ต้องเปลี่ยนจริง ๆ?"
+  },
+  {
+    "id": "EV07",
+    "deck": "reality",
+    "title": "Prototype Rework",
+    "situation": "ต้นแบบบางส่วนใช้ต่อไม่ได้",
+    "penaltyManday": -4,
+    "penaltyBudget": -1000,
+    "question": "ทีมจะลด Scope หรือ Rework ส่วนไหน?"
+  },
+  {
+    "id": "EV08",
+    "deck": "reality",
+    "title": "External Cost Increase",
+    "situation": "ค่า partner หรือ operation เพิ่มจากแผน",
+    "penaltyManday": 0,
+    "penaltyBudget": -3000,
+    "question": "Product ยังอยู่ในกรอบต้นทุนหรือไม่?"
+  },
+  {
+    "id": "EV09",
+    "deck": "reality",
+    "title": "Decision Meeting Delayed",
+    "situation": "การตัดสินใจสำคัญถูกเลื่อน",
+    "penaltyManday": -2,
+    "penaltyBudget": 0,
+    "question": "ทีมจะเดินหน้าส่วนใดโดยไม่รอ?"
+  },
+  {
+    "id": "EV10",
+    "deck": "reality",
+    "title": "New Compliance Requirement",
+    "situation": "พบข้อกำกับใหม่ก่อน Launch",
+    "penaltyManday": -3,
+    "penaltyBudget": -2000,
+    "question": "ข้อมูลหรือ flow ใดต้องปรับเพื่อให้ปลอดภัยขึ้น?"
+  },
+  {
+    "id": "EV11",
+    "deck": "reality",
+    "title": "Production Incident",
+    "situation": "ทีมบางส่วนถูกดึงไปช่วยแก้ Incident อื่น",
+    "penaltyManday": -5,
+    "penaltyBudget": 0,
+    "question": "อะไรคือสิ่งสำคัญที่สุดที่ยังต้องทำต่อ?"
+  },
+  {
+    "id": "EV12",
+    "deck": "reality",
+    "title": "New User Segment",
+    "situation": "ต้องรองรับกลุ่มผู้ใช้เพิ่มก่อนจบ Sprint",
+    "penaltyManday": -2,
+    "penaltyBudget": -2000,
+    "question": "จะรองรับทั้งหมดหรือปรับ MVP อย่างไร?"
+  },
+  {
+    "id": "EV13",
+    "deck": "reality",
+    "title": "Competitor Launches Similar Feature",
+    "situation": "คู่แข่งเปิดตัว Feature คล้ายกันระหว่าง Sprint",
+    "penaltyManday": -2,
+    "penaltyBudget": -1000,
+    "question": "อะไรคือ Value ที่ทำให้ Product ของคุณยังต่าง?"
+  },
+  {
+    "id": "EV14",
+    "deck": "reality",
+    "title": "Partner API Limitation",
+    "situation": "พบข้อจำกัดใหม่จากระบบภายนอก",
+    "penaltyManday": -3,
+    "penaltyBudget": -1500,
+    "question": "Feature ไหนต้องเปลี่ยนหรือมีทางเลือกอื่น?"
+  },
+  {
+    "id": "EV15",
+    "deck": "reality",
+    "title": "Security Concern Found",
+    "situation": "ทีมพบความเสี่ยงด้านข้อมูลก่อนปล่อย",
+    "penaltyManday": -3,
+    "penaltyBudget": -2500,
+    "question": "ข้อมูลใดไม่จำเป็นต้องเก็บ และอะไรต้องป้องกันเพิ่ม?"
+  },
+  {
+    "id": "EV16",
+    "deck": "reality",
+    "title": "User Rejects Core Assumption",
+    "situation": "ผู้ใช้บอกว่าสมมติฐานสำคัญของทีมไม่ตรงความจริง",
+    "penaltyManday": -4,
+    "penaltyBudget": 0,
+    "question": "คุณจะเปลี่ยน Product Goal หรือ Feature อย่างไร?"
+  },
+  {
+    "id": "EV17",
+    "deck": "reality",
+    "title": "Timeline Shortened",
+    "situation": "Deadline ถูกเลื่อนให้เร็วขึ้น",
+    "penaltyManday": -5,
+    "penaltyBudget": 0,
+    "question": "สิ่งใดคือ Must-have จริง ๆ?"
+  },
+  {
+    "id": "EV18",
+    "deck": "reality",
+    "title": "Vendor Unavailable",
+    "situation": "Vendor/Partner ไม่สามารถส่งมอบส่วนที่ต้องใช้ได้",
+    "penaltyManday": -2,
+    "penaltyBudget": -2000,
+    "question": "ทีมมีทางเลือกที่พึ่งพาภายนอกน้อยลงหรือไม่?"
+  },
+  {
+    "id": "EV19",
+    "deck": "reality",
+    "title": "Usage Spikes Unexpectedly",
+    "situation": "จำนวนผู้ใช้เพิ่มเร็วกว่าที่วางแผน",
+    "penaltyManday": -3,
+    "penaltyBudget": -2000,
+    "question": "ทีมจะรักษาคุณภาพส่วนไหนก่อน?"
+  },
+  {
+    "id": "EV20",
+    "deck": "reality",
+    "title": "Management Changes Priority",
+    "situation": "ผู้บริหารให้ความสำคัญกับ Outcome อีกแบบหนึ่ง",
+    "penaltyManday": -2,
+    "penaltyBudget": -1000,
+    "question": "Product Goal เดิมยังสมเหตุผลหรือควรปรับอย่างไร?"
+  }
+]
