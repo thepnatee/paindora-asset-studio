@@ -14,14 +14,23 @@ AI should generate **illustrations**, not the final card text/layout. The app ke
   - Role 14
   - Action 20
   - Reality 20
-- Live card editor + preview
+- Live card editor + print preview
+- Senior-friendly readability mode as the default
+- Four output styles:
+  - Senior Friendly
+  - Standard
+  - Lean Ink
+  - Monochrome Prototype
+- Readability warnings for overlong copy
 - Lean CI: navy + warm white + one deck accent
 - Server-side OpenAI image generation with transparent background
 - Single illustration generation
-- Cost-confirmed deck batch generation
+- Missing-only deck batch generation
+- Missing-only all-deck generation
 - Default client batch size: 6
 - Server-side batch cap via `OPENAI_BATCH_MAX`
-- Existing generated illustrations are skipped during deck batches
+- Existing generated illustrations are skipped during batch generation
+- Friendly API/billing/rate-limit error messages
 - Per-card PNG export
 - Deck ZIP export
 - JSON import/copy for bulk data workflows
@@ -34,10 +43,10 @@ AI should generate **illustrations**, not the final card text/layout. The app ke
 cp .env.example .env.local
 # put your own key in .env.local
 npm install
-npm run dev
+npm run dev -- -p 3005
 ```
 
-Open http://localhost:3000
+Open http://localhost:3005
 
 ## Environment
 
@@ -64,6 +73,36 @@ The image API endpoint is server-side, so the browser never receives the API key
 
 > The image generator is used only for transparent illustrations. Final card typography/layout is rendered by code for consistency and production control.
 
+## Accessibility / senior-friendly rules
+
+The Senior Friendly mode intentionally gives text more space and reduces the illustration area. It also uses stronger contrast, larger body copy and larger footer chips.
+
+The UI warns when copy exceeds these targets:
+
+- Title: 38 characters
+- Situation: 80
+- Impact: 60
+- Goal: 65
+- Behavior: 65
+- Constraint: 75
+- Description / Responsibility: 80
+- Reality question: 70
+
+The goal is to **shorten copy instead of shrinking type**.
+
+## Generator Center
+
+The Studio currently generates:
+
+1. AI illustration for one card
+2. missing illustrations for the current deck
+3. all missing illustrations across all 96 cards
+4. final rendered card fronts in four visual modes
+5. individual PNG files
+6. deck ZIP packages
+
+The UI always asks for confirmation before paid batch image generation. Existing illustrations are skipped.
+
 ## Data
 
 `data/cards.json` is the production source of truth for all 96 card fronts. The schema is in `lib/types.ts`.
@@ -84,19 +123,6 @@ The validator checks:
 - Action role requirements
 - Reality cards have no A/B/C options
 
-## Batch generation
-
-Choose a card in a deck and click **Generate Current Deck**.
-
-The UI will:
-
-1. skip cards that already have illustrations
-2. ask for confirmation before API usage
-3. generate in batches of 6
-4. call the server sequentially to reduce rate-limit spikes and improve cost control
-
-You can lower the server batch cap in `.env.local` if you want tighter cost control.
-
 ## Recommended Git workflow
 
 - `main`: approved production baseline
@@ -105,8 +131,13 @@ You can lower the server batch cap in `.env.local` if you want tighter cost cont
 
 ## Next additions
 
-- card-back templates
+- 5 reusable card-back templates
 - server-side print PDF generation
 - print-sheet imposition / crop marks in prepress only
+- Product Sprint Board A2
+- Resource Tracker
+- Decision Log
+- Understand / Build / Pitch Canvas
+- Reflection Sheet
 - save generated illustrations outside browser state
 - Vercel deployment
