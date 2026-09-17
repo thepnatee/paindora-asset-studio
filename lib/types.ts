@@ -1,4 +1,6 @@
 export type DeckType = "pain" | "persona" | "role" | "action" | "reality";
+export type DisplayMode = "standard" | "senior" | "lean" | "mono";
+export type GenerateScope = "illustration" | "layout" | "final" | "print";
 
 export type CardRecord = {
   id: string;
