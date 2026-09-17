@@ -17,8 +17,9 @@ export async function POST(req: NextRequest) {
     }
 
     const client = new OpenAI({ apiKey });
-    const model = process.env.OPENAI_IMAGE_MODEL || "gpt-image-2.5-flare";
+    const model = process.env.OPENAI_IMAGE_MODEL || "gpt-image-2";
     const size = process.env.OPENAI_IMAGE_SIZE || "912x1392";
+    const quality = process.env.OPENAI_IMAGE_QUALITY || "low";
 
     const result = await client.images.generate({
       model,
@@ -27,7 +28,7 @@ export async function POST(req: NextRequest) {
       size,
       background: "transparent",
       output_format: "png",
-      quality: "medium",
+      quality,
     } as any);
 
     const image = result.data?.[0];
