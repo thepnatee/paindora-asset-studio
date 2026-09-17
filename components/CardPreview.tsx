@@ -1,13 +1,19 @@
 "use client";
 
 import { forwardRef } from "react";
-import { CardRecord } from "@/lib/types";
+import { CardRecord, DisplayMode } from "@/lib/types";
 import { ci, deckLabels } from "@/lib/design-system";
+import { displayPoints } from "@/lib/readability";
 
-export const CardPreview = forwardRef<HTMLDivElement, { card: CardRecord }>(function CardPreview({ card }, ref) {
+export const CardPreview = forwardRef<HTMLDivElement, { card: CardRecord; displayMode?: DisplayMode }>(function CardPreview({ card, displayMode = "senior" }, ref) {
   const accent = ci.deck[card.deck];
   return (
-    <div ref={ref} className="card" style={{ ["--accent" as string]: accent }}>
+    <div
+      ref={ref}
+      className={`card mode-${displayMode}`}
+      style={{ ["--accent" as string]: accent }}
+      data-display-mode={displayMode}
+    >
       <div className="card-header">
         <div className="deck-pill">{deckLabels[card.deck]}</div>
         <div className="card-id">{card.id}</div>
@@ -21,7 +27,7 @@ export const CardPreview = forwardRef<HTMLDivElement, { card: CardRecord }>(func
 
         <div className="illustration-zone">
           {card.illustrationDataUrl ? (
-            <img src={card.illustrationDataUrl} alt="generated illustration" />
+            <img src={card.illustrationDataUrl} alt={`Illustration for ${card.title}`} />
           ) : (
             <div className="illustration-placeholder">ILLUSTRATION</div>
           )}
@@ -37,12 +43,12 @@ export const CardPreview = forwardRef<HTMLDivElement, { card: CardRecord }>(func
         {card.deck === "pain" && (
           <div className="info-stack">
             <Info label="Situation" value={card.situation} />
-            <Info label="Impact" value={card.impact} />
+            <Info label="Impact" value={card.impact} points />
           </div>
         )}
         {card.deck === "role" && (
           <div className="info-stack">
-            <Info label="Capabilities" value={(card.capabilities ?? []).join(" • ")} />
+            <Info label="Capabilities" value={(card.capabilities ?? []).join(" • ")} points />
             <Info label="Responsibilities" value={card.responsibilities} />
           </div>
         )}
@@ -63,25 +69,42 @@ export const CardPreview = forwardRef<HTMLDivElement, { card: CardRecord }>(func
       <div className="card-footer">
         {card.deck === "persona" && (
           <>
-            <span><b>Digital</b> {card.digitalConfidence}</span>
-            <span>{(card.tags ?? []).join(" • ")}</span>
+            <span className="footer-chip"><b>Digital</b>&nbsp; {card.digitalConfidence}</span>
+            <span className="footer-meta">{(card.tags ?? []).join(" • ")}</span>
           </>
         )}
-        {card.deck === "pain" && <><span>{card.difficulty}</span><span>Minimum {card.minimumAction}</span></>}
-        {card.deck === "role" && <><span>{card.manday} MD</span><span>฿{card.budget ?? 0}</span></>}
-        {card.deck === "action" && <><span>{card.manday} MD • ฿{card.budget ?? 0}</span><span>{card.roleRule}</span></>}
-        {card.deck === "reality" && <><span>{card.penaltyManday} MD</span><span>฿{card.penaltyBudget ?? 0}</span></>}
+        {card.deck === "pain" && (
+          <>
+            <span className="footer-chip">● {(card.difficulty ?? "").toUpperCase()}</span>
+            <span className="footer-chip">⚡ ACTION {card.minimumAction}</span>
+          </>
+        )}
+        {card.deck === "role" && (
+          <><span className="footer-chip">{card.manday} MD</span><span className="footer-chip">฿{card.budget ?? 0}</span></>
+        )}
+        {card.deck === "action" && (
+          <><span className="footer-chip">{card.manday} MD · ฿{card.budget ?? 0}</span><span className="footer-chip">{card.roleRule}</span></>
+        )}
+        {card.deck === "reality" && (
+          <><span className="footer-chip">{card.penaltyManday} MD</span><span className="footer-chip">฿{card.penaltyBudget ?? 0}</span></>
+        )}
       </div>
     </div>
   );
 });
 
-function Info({ label, value }: { label: string; value?: string }) {
+function Info({ label, value, points = false }: { label: string; value?: string; points?: boolean }) {
   if (!value) return null;
+  const items = points ? displayPoints(value) : [];
+
   return (
     <div className="info-row">
       <div className="info-label">{label}</div>
-      <div className="info-value">{value}</div>
+      <div className="info-value">
+        {points && items.length > 1 ? (
+          <ul className="info-points">{items.map((item, index) => <li key={`${item}-${index}`}>{item}</li>)}</ul>
+        ) : value}
+      </div>
     </div>
   );
 }
