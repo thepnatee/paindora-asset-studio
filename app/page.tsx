@@ -9,6 +9,7 @@ import { illustrationPrompt } from "@/lib/prompts";
 import { CardPreview } from "@/components/CardPreview";
 
 const deckOrder: DeckType[] = ["pain", "persona", "role", "action", "reality"];
+const CLIENT_BATCH_SIZE = 6;
 
 export default function Home() {
   const [cards, setCards] = useState<CardRecord[]>(cardsSeed as CardRecord[]);
@@ -39,6 +40,62 @@ export default function Home() {
     } catch (e: any) {
       setMessage(e.message);
     } finally { setBusy(false); }
+  }
+
+  async function generateDeckIllustrations() {
+    const deck = selected.deck;
+    const deckCards = cards.filter(c => c.deck === deck);
+    const pending = deckCards.filter(c => !c.illustrationDataUrl);
+
+    if (!pending.length) {
+      setMessage(`${deck.toUpperCase()} already has illustrations for every card.`);
+      return;
+    }
+
+    const ok = window.confirm(
+      `Generate ${pending.length} ${deck.toUpperCase()} illustrations?\n\n` +
+      `Images are generated in batches of ${CLIENT_BATCH_SIZE}. API usage may incur cost.`,
+    );
+    if (!ok) return;
+
+    setBusy(true);
+    try {
+      let completed = 0;
+      for (let i = 0; i < pending.length; i += CLIENT_BATCH_SIZE) {
+        const chunk = pending.slice(i, i + CLIENT_BATCH_SIZE);
+        setMessage(`Generating ${deck.toUpperCase()} ${completed + 1}–${completed + chunk.length} of ${pending.length}…`);
+
+        const response = await fetch("/api/generate-batch", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            items: chunk.map(card => ({ id: card.id, prompt: illustrationPrompt(card) })),
+          }),
+        });
+        const json = await response.json();
+        if (!response.ok) throw new Error(json.error || "Batch generation failed");
+
+        const resultMap = new Map<string, string>();
+        const failures: string[] = [];
+        for (const item of json.items ?? []) {
+          if (item.dataUrl) resultMap.set(item.id, item.dataUrl);
+          if (item.error) failures.push(`${item.id}: ${item.error}`);
+        }
+
+        setCards(prev => prev.map(card => {
+          const dataUrl = resultMap.get(card.id);
+          return dataUrl ? { ...card, illustrationDataUrl: dataUrl } : card;
+        }));
+
+        completed += chunk.length;
+        if (failures.length) setMessage(`Generated ${completed}/${pending.length}. Failed: ${failures.join(" | ")}`);
+      }
+      setMessage(`Finished ${deck.toUpperCase()} batch generation.`);
+    } catch (e: any) {
+      setMessage(e.message);
+    } finally {
+      setBusy(false);
+    }
   }
 
   async function exportPng() {
@@ -129,7 +186,11 @@ export default function Home() {
             <label>Constraint<textarea value={selected.constraint ?? ""} onChange={e => patch({ constraint: e.target.value })} /></label>
           </>}
           <label>Illustration Prompt<textarea rows={8} value={illustrationPrompt(selected)} readOnly /></label>
-          <button className="button" disabled={busy} onClick={generateIllustration}>{busy ? "Working…" : "Generate Illustration"}</button>
+          <div className="editor-actions">
+            <button className="button" disabled={busy} onClick={generateIllustration}>{busy ? "Working…" : "Generate Illustration"}</button>
+            <button className="button secondary" disabled={busy} onClick={generateDeckIllustrations}>Generate Current Deck</button>
+          </div>
+          <div className="cost-note">Lean-cost guard: batch size {CLIENT_BATCH_SIZE}. Existing illustrations are skipped.</div>
           <div className="message">{message}</div>
         </section>
 
