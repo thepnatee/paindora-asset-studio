@@ -1,0 +1,32 @@
+export type DeckType = "pain" | "persona" | "role" | "action" | "reality";
+
+export type CardRecord = {
+  id: string;
+  deck: DeckType;
+  title: string;
+  subtitle?: string;
+  identity?: string;
+  goal?: string;
+  behavior?: string;
+  constraint?: string;
+  digitalConfidence?: "Low" | "Medium" | "High";
+  tags?: string[];
+  situation?: string;
+  impact?: string;
+  difficulty?: "Easy" | "Medium" | "Hard";
+  minimumAction?: string;
+  phase?: string;
+  level?: string;
+  description?: string;
+  manday?: number;
+  budget?: number;
+  roleRule?: string;
+  compatibleRoles?: string[];
+  capabilities?: string[];
+  responsibilities?: string;
+  penaltyManday?: number;
+  penaltyBudget?: number;
+  question?: string;
+  illustrationPrompt?: string;
+  illustrationDataUrl?: string;
+};
